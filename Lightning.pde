@@ -27,7 +27,6 @@ void draw()
 {
     if(millis() - startTime > 100){
       if(blue <= 200 && flash == true){
-        System.out.println(millis() + " ");
         background(0,0,blue);
         blue += 10;
         fill(180);
@@ -39,7 +38,6 @@ void draw()
         ellipse(300,40,200,110);
         ellipse(400,40,200,80);
         ellipse(500,40,200,80);
-      //System.out.println(blue);
       }
       else{
         blue = 0;
